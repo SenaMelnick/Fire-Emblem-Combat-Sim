@@ -13,6 +13,7 @@ const battlePrep = () => {
     firstUnit = unit2;
     secondUnit = unit1;
   }
+  //this decides what unit goes first based on speed
 
   let battleOver = false;
   let dmgTotal1 = 0;
@@ -44,6 +45,7 @@ const battlePrep = () => {
       break;
     }
   }
+  //this loops through turns until a unit loses all thier HP
 };
 
 const battle = (unit1, unit2) => {
@@ -63,6 +65,7 @@ const battle = (unit1, unit2) => {
   } else if (critRate < 1) {
     critRate = 0;
   }
+  //calculates hit rate and crit rate
   let dmg;
   if ((unit1.class.dmgType = `mag`)) {
     dmg = unit1.class.att - unit2.class.res;
@@ -72,6 +75,7 @@ const battle = (unit1, unit2) => {
   if (dmg < 1) {
     dmg = 0;
   }
+  //calculates if damage will hit on defense or resistance 
 
   if (Math.floor(Math.random() * 100 + 1) > hitRate) {
     alert(`${unit1.name} missed!`);
@@ -85,4 +89,5 @@ const battle = (unit1, unit2) => {
       return dmg;
     }
   }
+  //this does RNG to check if the unit will hit or crit, and returns the result
 };

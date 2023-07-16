@@ -19,7 +19,7 @@ class UnitClass {
         this.name = name
     };
 };
-
+//classes for units and unit classes. Unit's stats are entirely based on it's class.
 
 
 const darkKnight = new UnitClass(39, 25, 17, 19, 19, 20, 24, 'mag', `Dark Knight`);
@@ -41,3 +41,6 @@ var amelia = new Units(`Amelia`, general);
 var lissa = new Units(`Lissa`, cleric);
 var playerUnitList = [robin, hector, lissa];
 var enemyUnitList = [leo, mia, amelia];
+
+//here I define the classes and default units. 
+//Names and stats, as well as the battle system are based on the Fire Emblem game series

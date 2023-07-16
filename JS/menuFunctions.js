@@ -1,6 +1,7 @@
 const menuStart = () => {
   let stayInMenu = true;
   while (stayInMenu === true) {
+    //this loop and others like it ensure the uesr stays in the menu unless they input 0 
     let input = prompt(
       ` 0) Exit
  1) Edit Player Team
@@ -59,6 +60,7 @@ HP: ${list[input].class.hp}
 ${dmgMsg} ${list[input].class.att} ${blankSkill}   Skill: ${list[input].class.skl}
 Speed: ${list[input].class.spd}    ${blankSpace}    Luck: ${list[input].class.lck}
 Defense: ${list[input].class.def}  ${blankSpace}   Resistance: ${list[input].class.res}`
+//this displays all a unit's stats, accounting for spacing
           );
         }
         break;
@@ -112,12 +114,14 @@ Defense: ${list[input].class.def}  ${blankSpace}   Resistance: ${list[input].cla
         eval(`var newUnit${unitNumber} = new Units(unitName, className)`);
         eval(`list.push(newUnit${unitNumber})`);
         unitNumber += 1;
+        //this ensures that every newly created unit will have a different variable names
         break;
       case `3`:
         {
           let input = displayUnits(list, `delete`) - 1;
           alert(`${list[input].name} has been deleted.`);
           list.splice([input], 1);
+          //deletes the inputed unit
         }
         break;
       case `0`:
@@ -147,5 +151,7 @@ ${index}) ${val.name}`;
     }
   }
 };
+//this function displays a dynamic list of units and allows the unit to input thier choosen unit.
+//this is called by case 1 and case 3 of the previous function
 
 menuStart();
