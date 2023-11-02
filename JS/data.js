@@ -22,14 +22,14 @@ class UnitClass {
 //classes for units and unit classes. Unit's stats are entirely based on it's class.
 
 
-const darkKnight = new UnitClass(39, 25, 17, 19, 19, 20, 24, 'mag', `Dark Knight`);
-const grandMaster = new UnitClass(38, 20, 17, 17, 10, 16, 13, `str`, `Grandmaster`)
-const swordMaster = new UnitClass(47, 27, 32, 38, 26, 24, 17, `str`, `Swordmaster`);
-const lord = new UnitClass(44, 24, 19, 18, 11, 23, 12, `str`, `Lord`);
-const general = new UnitClass(43, 20, 22, 22, 24, 18, 12, `str`, `General`);
-const cleric = new UnitClass(39, 22, 17, 15, 20, 14, 20, `mag`, `Cleric`);
-const knight = new UnitClass(45, 22, 17, 20, 14, 15, 10, `str`, `Knight`);
-const mage = new UnitClass(37, 19, 21, 21, 15, 10, 15, `mag`, `Mage`);
+const darkKnight =  new UnitClass(69, 52, 24, 39, 38, 30, 24, 'mag', `Dark Knight`);
+const grandMaster = new UnitClass(58, 45, 37, 37, 45, 36, 23, `str`, `Grandmaster`)
+const swordMaster = new UnitClass(57, 47, 32, 48, 36, 24, 7, `str`, `Swordmaster`);
+const lord =        new UnitClass(64, 44, 39, 38, 41, 23, 22, `str`, `Lord`);
+const general =     new UnitClass(73, 31, 22, 22, 34, 48, 2, `str`, `General`);
+const cleric =      new UnitClass(79, 32, 27, 25, 41, 44, 29, `mag`, `Cleric`);
+const knight =      new UnitClass(55, 42, 37, 30, 24, 35, 9, `str`, `Knight`);
+const mage =        new UnitClass(57, 49, 31, 21, 35, 28, 25, `mag`, `Mage`);
 const classList = [darkKnight, grandMaster, swordMaster, lord, general, cleric, knight, mage];
 
 

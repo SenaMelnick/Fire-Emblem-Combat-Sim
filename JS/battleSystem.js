@@ -54,7 +54,7 @@ const battle = (unit1, unit2) => {
     unit1.class.skl * 2 +
     unit1.class.lck / 2 -
     (unit2.class.spd * 2 + unit2.class.lck);
-  let critRate = unit1.class.skl / 2 + 10 - unit2.class.lck;
+  let critRate = unit1.class.skl / 2 + 30 - unit2.class.lck;
   if (hitRate > 100) {
     hitRate = 100;
   } else if (hitRate < 1) {
